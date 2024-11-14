@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 function ThankYou({ onTimeout }) {
   useEffect(() => {
     const timer = setTimeout(onTimeout, 5000);
-    return () => clearTimeout(timer); // Clean up timer
+    return () => clearTimeout(timer); // Clean up timer hai ye
   }, [onTimeout]);
 
   return (
