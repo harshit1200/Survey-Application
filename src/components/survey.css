@@ -1,0 +1,45 @@
+/* src/components/Survey.css */
+/* src/components/Survey.css */
+.survey {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .survey h2 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .survey p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navigation-buttons button {
+    background-color: #007bff;
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  

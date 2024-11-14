@@ -1,0 +1,19 @@
+/* src/components/Welcome.css */
+.welcome {
+    text-align: center;
+    padding: 20px;
+    background-color: #80dce2; /* White background for welcome screen */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome button {
+    margin-top: 20px;
+    background-color: #2894a7; /* Green button for start */
+  }
+  
+  .welcome button:hover {
+    background-color: #88212f; /* Darker green on hover */
+  }
+  
+  

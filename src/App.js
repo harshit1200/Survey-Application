@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Welcome from './components/Welcome';
+import Survey from './components/Survey';
+import ThankYou from './components/Thankyou';
 
 function App() {
+  const [step, setStep] = useState('welcome'); // Tracks the current step
+  const [sessionId, setSessionId] = useState(null); // Unique ID for each survey session
+
+  // Start survey and generate a unique session ID
+  const startSurvey = () => {
+    setSessionId(Date.now()); // Simple unique ID generation
+    setStep('survey');
+  };
+
+  // Complete survey and show thank-you page
+  const completeSurvey = () => setStep('thankYou');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {step === 'welcome' && <Welcome onStart={startSurvey} />}
+      {step === 'survey' && <Survey sessionId={sessionId} onComplete={completeSurvey} />}
+      {step === 'thankYou' && <ThankYou onTimeout={() => setStep('welcome')} />}
+    </>
   );
 }
 

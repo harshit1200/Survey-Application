@@ -1,0 +1,20 @@
+/* src/components/ThankYou.css */
+/* src/components/ThankYou.css */
+.thank-you {
+    text-align: center;
+    padding: 20px;
+    color: #21dbec; /* Green text for thank-you message */
+    background-color: #ffffff; /* White background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thank-you h1 {
+    color: #94b2c0;
+  }
+  
+  .thank-you p {
+    color: #666;
+  }
+  
+  
