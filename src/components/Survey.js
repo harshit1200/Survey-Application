@@ -1,4 +1,3 @@
-// src/components/Survey.js
 import { useState } from 'react';
 import questions from '../data/questions';
 
@@ -49,7 +48,7 @@ function Survey({ sessionId, onComplete }) {
       )}
 
       <div className="navigation-buttons">
-        <button onClick={goToPrev} disabled={currentQuestionIndex === 0}>Previous</button> &nbsp &nbsp
+        <button onClick={goToPrev} disabled={currentQuestionIndex === 0}>Previous</button>
         {currentQuestionIndex < questions.length - 1 ? (
           <button onClick={goToNext}>Next</button>
         ) : (

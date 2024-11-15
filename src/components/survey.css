@@ -1,10 +1,8 @@
-/* src/components/Survey.css */
-/* src/components/Survey.css */
 .survey {
     max-width: 400px;
     margin: auto;
     padding: 20px;
-    background-color: #ffffff; /* White background for readability */
+    background-color: #ffffff; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }

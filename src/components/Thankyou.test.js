@@ -1,4 +1,3 @@
-// src/components/ThankYou.test.js
 import { render, screen } from '@testing-library/react';
 import ThankYou from './Thankyou';
 

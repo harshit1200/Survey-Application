@@ -1,4 +1,3 @@
-// src/components/Survey.test.js
 import { render, screen, fireEvent } from '@testing-library/react';
 import Survey from './Survey';
 import questions from '../data/questions';

@@ -1,5 +1,3 @@
-// src/components/Welcome.js
-// src/components/Welcome.js
 import './welcome.css';
 
 function Welcome({ onStart }) {

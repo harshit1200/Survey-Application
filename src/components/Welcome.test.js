@@ -1,4 +1,3 @@
-// src/components/Welcome.test.js
 import { render, screen, fireEvent } from '@testing-library/react';
 import Welcome from './Welcome';
 
